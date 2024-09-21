@@ -1,0 +1,113 @@
+/* General Styles */
+body {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Light Section */
+.light {
+    background-color: #ADD8E6; /* Light blue */
+    color: #000; /* Black text color */
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 5vh;
+    padding: 15px;
+    max-width: 80%;
+    box-sizing: border-box;
+}
+
+/* Form Fields */
+form {
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 15px;
+}
+.username{
+    text-align: left;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 15px;
+}
+.email{
+    text-align: left;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 15px;
+}
+.password{
+    text-align: left;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 15px;
+}
+
+
+
+/* Button Styles */
+.btn {
+    text-align: center;
+    margin: 20px auto;
+}
+
+button {
+    background-color: #1E90FF; /* Blue */
+    cursor: pointer;
+    width: 50%;
+    border-radius: 5px;
+    padding: 8px;
+    border: none;
+    font-size: 14px;
+    color: #fff;
+}
+
+/* Responsive Layout */
+@media (max-width: 1024px) {
+    .light {
+        max-width: 90%;
+        padding: 0;
+        margin: 0;
+    }
+
+    button {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+    .light {
+        max-width: 95%;
+        padding: 0;
+        margin: 0;
+    }
+
+    button {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .light {
+        max-width: 100%;
+        padding: 0px;
+        margin: 0;
+    }
+
+    button {
+        font-size: 11px;
+        padding: 8px;
+    }
+}
+
+input:focus {
+    background-color: #fff;
+    color: #000;
+}

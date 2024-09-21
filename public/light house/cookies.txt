@@ -1,0 +1,2 @@
+<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+<div class="elfsight-app-e6fd24d1-a371-4ad9-9694-2fc5d307bea4"></div>

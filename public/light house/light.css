@@ -1,0 +1,60 @@
+.light{
+    background: rgb(221, 85, 221);
+    color: white;
+    margin-left:  300px;
+    margin-right: 300px;
+   text-align: center;
+   display: block;
+   border-radius: 10cm;
+   margin-top: 6cm;
+   
+}
+body{
+    background-image: url(light.jpg); 
+    justify-content: center; 
+    background-size: cover;
+     
+}
+.acad{
+   text-align: left;
+   border: none;
+   border-radius: 2cm;
+   padding-left: 3.11cm;
+}
+.academy{
+    text-align: left;
+    border-radius: 2cm;
+    border: none;
+    padding-left: 2cm;
+ }
+ .btn{
+        
+    
+    border: none;
+        margin-left:  350px;
+        margin-right: 350px;
+        border-radius: 90000cm;
+        color: red;
+ }
+button{
+    background-color: rgb(148, 235, 148);
+    cursor: pointer;
+    width: 50%;
+    top: 100px;
+    border-radius: 2cm;
+    margin-bottom: 0.5cm;
+    border: none;
+}
+
+.house{
+    font-weight: 300;
+    quotes: unset;
+    word-wrap: break-word;
+    transform-origin: 2cm;
+}
+.aca{
+    text-align: left;
+    border-radius: 2cm;
+    border: none;
+    padding-left: 3.31cm;
+}

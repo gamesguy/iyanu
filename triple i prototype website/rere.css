@@ -1,0 +1,193 @@
+body{
+    
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.445);
+    background: linear-gradient(rgba(225, 217, 0, 0.692),rgb(225, 225, 225));
+    overflow: hidden;
+
+}
+
+#container::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: linear-gradient(rgba(1, 13, 119, 0.65), rgb(231, 231, 231));
+    animation: background-animation 60s linear alternate infinite;
+
+}
+
+@keyframes background-animation {
+    0% {
+        opacity: 0;
+    }
+
+    47% {
+        opacity: 0;
+    }
+
+    53% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+#scoreBox {
+    width: 100px;
+    font-size: 50px;
+    font-family: cursive;
+    display: flex;
+    justify-content: end;
+    align-self: center;
+    padding: 30px 0px;
+    color: aqua;
+    font-weight: bold;
+    
+
+
+
+
+}
+
+#score {
+    width: 150px;
+    text-align: left;
+    margin-left: 5px;
+    font-size: 25px;
+    margin-top: 1px;
+    color: green;
+
+
+}
+
+span {
+    z-index: 3;
+}
+
+#character-box {
+    height: 256px;
+    width: 256px;
+    position: absolute;
+    left:  100px;
+    bottom: -100px;
+
+}
+
+#character {
+    width: 141px;
+    height: 100px;
+    background: url(triple\ aa.png);
+}
+
+#block {
+    height: 200px;
+    width: 100px;
+    background-color: rgb(27 205 255);
+    border: 2px solid black;
+    position: absolute;
+    bottom: 50px;
+    left: 900px;
+    animation: block-animate 2s linear forwards infinite;
+}
+
+
+#road {
+    width: 100%;
+    height: 50px;
+    background-image: linear-gradient(#db1717, #440707);
+    position: absolute;
+    bottom: 0px;
+}
+
+.jump {
+    animation: character-box-jump .7s linear;
+}
+
+@keyframes character-animate {
+    0% {
+        background-position: 1536px;
+
+    }
+
+    100% {
+        background-position: 0px;
+
+    }
+
+}
+
+@keyframes character-box-jump {
+    0% {
+        bottom: 50px;
+
+    }
+
+    30% {
+        bottom: 300px;
+
+    }
+
+    70% {
+        bottom: 300px;
+    }
+
+    100% {
+        bottom: 50px;
+
+    }
+
+}
+
+
+
+@keyframes block-animate {
+    0% {
+        left: 1300px;
+
+    }
+
+    100% {
+           left: -200px;
+
+    }
+    
+}
+
+
+.center {
+    position: absolute;
+    z-index: 10;
+    color: black;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.back {
+    position: absolute;
+    z-index: 10;
+    color: blue;
+    top: 10%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+button{
+    background-color: red;
+}
